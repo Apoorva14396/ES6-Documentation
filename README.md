@@ -3,13 +3,13 @@
 <h1> Getting Started</h1>
 
 <h2>What is ES6?</h2>
-It is a Scripting Language. ES6 brings many new feature like concept of classes, template tags, arrow functions etc. ... All of the popular javascript libraries and frameworks like Node.js, ReactJS follow ES6.</br>
+It is a Scripting Language. ES6 brings many new feature like concept of classes, template tags, arrow functions etc. All of the popular javascript libraries and frameworks like Node.js, ReactJS follow ES6.</br>
 
 <h2>1. let & const</h2>
 <h3>Let keyword</h3>
-It is block scope.</br>
-We cannot declare one keyword two times.</br>
-We can just declare the keyword without any initialization.</br>
+-It is block scope.</br>
+-We cannot declare one keyword two times.</br>
+-We can just declare the keyword without any initialization.</br>
 
 for eg: </br>
 let j,</br>
@@ -27,11 +27,11 @@ age=70;</br>
 console.log(a);`70`</br>
 
 <h3>Const keyword.</h3>
-Value of const cannot be change if we change it will throw runtime error.</br>
+-Value of const cannot be change if we change it will throw runtime error.</br>
 eg: const X=1;</br>
 X=2; </br>
 console.log(X); `error:Assignment to constant variable`</br>
-We should initialize the const variable with value at the time of declaration.</br>
+-We should initialize the const variable with value at the time of declaration.</br>
 
 
 Arrays and objects are of **reference types** .So, const here holds doesn't hold constant values but a pointer to those</br> values which is of constant type.</br>
@@ -49,8 +49,8 @@ OBJ.age=29;</br>
 console.log(age);`[object Object]{age:29}`</br>
 
 <h2>2. Block Scope</h2>
-Anuthing within{} is considered to be block scope. </br>
-let and const both are block scope variables.</br>
+-Anything within{} is considered to be block scope. </br>
+-let and const both are block scope variables.</br>
 
 eg:</br>
 let y=9;</br>
@@ -62,7 +62,7 @@ console.log(y);`10`</br>
 console.log(y);`9`</br>
 
 <h2>3.Hoisting with let and const</h2> </br>
-Hoisting means initializing the varibale before declaring the type.Works with var but doesn't work with let and const.</br>
+-Hoisting means initializing the varibale before declaring the type.Works with var but doesn't work with let and const.</br>
 
 age=27;</br>
 console.log(age);</br></br>
@@ -79,8 +79,8 @@ Works fine because we are decaring the age before calling the function.</br>
 
 
 <h2>4. Arrow function.</h2>
-An addition in ES6.</br>
-We use => in place of function keyword.</br></br>
+-An addition in ES6.</br>
+-We use => in place of function keyword.</br></br>
 
 when your function just have a single argument then tere is no need to pass it in the parenthesis.</br>
 eg:</br>
@@ -90,7 +90,7 @@ console.log(fn(2,3)); `5`</br>
 var fn=(a)=>return a+3;</br>
 console.log(fn(5));`8`</br>
 
-<h2>Arrow functions with callback functions</h2></br>
+<h3>Arrow functions with callback functions</h3>
 eg:</br>
 setTimeout(()=> console.log("Hello!!"),1000) `after 1000 ms. it will print Hello!!`</br>
 
