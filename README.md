@@ -2,7 +2,7 @@
 
 <h1> Getting Started</h1></br>
 
-<h2>**What is ES6?**</h2></br>
+<h2>What is ES6?</h2></br>
 It is a Scripting Language.</br>
 
 <h2>1. let & const</h2></br>
