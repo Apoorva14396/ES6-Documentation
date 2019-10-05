@@ -150,21 +150,6 @@ var person={</br>
 person["greet Me"]();</br>
 console.log(person);</br>
 
-Dynamically adding property names</br>
-
-let name='Anna';</br>
-let age =25;</br>
-
-let ageField="age";</br>
-let obj={</br>
-"name":'Sara',</br>
-[ageField]: 28,</br>
-    "greet Me" (){</br>
-          console.log(this.name+" "+this.age)</br>
-    }</br></br>
-}</br>
-console.log(obj);</br>
-
 <h2>6. Rest Operator</h2>
 When invoking a function, a need sometimes arises to be able to pass in an arbitrary number of arguments, and to process these arguments within the function. This need is handled by the rest function parameters syntax. It provides a way to capture the rest of the arguments after the defined arguments using the syntax shown below. These extra arguments are captured in an array.The rest parameter syntax allows us to represent an indefinite number of arguments as an array. </br>
 
