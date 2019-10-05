@@ -61,12 +61,12 @@ console.log(y);`10`</br>
 }</br>
 console.log(y);`9`</br>
 
-<h2>3.Hoisting with let and const</h2> </br>
+<h2>3.Hoisting with let and const</h2> 
 -Hoisting means initializing the varibale before declaring the type.Works with var but doesn't work with let and const.</br>
 
 age=27;</br>
 console.log(age);</br></br>
-let age; // age is not defined</br>
+let age; `age is not defined`</br>
 
 function f1()</br>
 {</br>
@@ -231,7 +231,7 @@ with Rest parameters</br>
 let numbers=[1,2,"3"];</br>
 let[a,...b]=numbers;</br>
 consol[a,b,c,d=10]=numbers;</br>
-console.log(d);//10</br>
+console.log(d);`10`</br>
 
 Swapping values</br>
 let a =5;</br>
