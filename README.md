@@ -2,10 +2,10 @@
 
 <h1> Getting Started</h1></br>
 
-<h2>What is ES6?</h2></br>
+<h2>**What is ES6?**</h2></br>
 It is a Scripting Language.</br>
 
-1. let & const</br>
+<h2>1. let & const</h2></br>
 
 Let keyword</br>
 It is block scope.</br>
@@ -50,7 +50,7 @@ console.log(OBJ); //[object Object]{age:27}</br>
 OBJ.age=29;</br>
 console.log(age);//[object Object]{age:29}</br>
 
-2. Block Scope</br>
+<h2>2. Block Scope</h2></br>
 Anuthing within{} is considered to be block scope. </br>
 let and const both are block scope variables.</br>
 
