@@ -1,11 +1,11 @@
 # ES6-Documentation
 
-<h1> Getting Started</h1>
+<h1> Getting Started</h1></br>
 
-<h2>What is ES6?</h2>
-It is a Scripting Language.
+<h2>What is ES6?</h2></br>
+It is a Scripting Language.</br>
 
-1. let & const
+1. let & const</br>
 
 Let keyword
 It is block scope
@@ -125,7 +125,7 @@ When we want the value of a property extracted by a function then we use method 
 var person={
     name: 'Bob',
     age: 20,
-   greet: function(){
+    greet: function(){
         console.log(this.name+" "+this.age)
     }
 }
@@ -172,8 +172,92 @@ let obj={
 console.log(obj);
 
 6. Rest Operator
+The rest parameter syntax allows us to represent an indefinite number of arguments as an array. 
+
+function sumUp(...toAdd)
+{
+console.log(toAdd);//[100,10,20]
+let result=0;
+for(let i =0;i<toAdd.length;i++)
+{
+result+=toAdd[i];
+}
+return result;
+}
+console.log(sumUp(100,10,20)); //130
 
 
+7 Spread Operator
+Spread operator allows an iterable to expand in places where 0+ arguments are expected. It is mostly used in variable array where there is more than 1 values are expected.It allows us the privilege to obtain a list of parameters from an array.
 
+let numbers=[1,2,3,4,5];
+
+console.log(...numbers);// 1 2 3 4 5 
+
+console.log(Math.max(...numbers))//5
+
+8. for-of-Loop
+for-of is a new loop in ES6 that replaces both for-in and forEach() and supports the new iteration protocol.
+
+let a=[1.29,3.50,7.9];
+for(let b of a)
+{
+console.log(a);// 1.29 3.50 7.9 
+}
+
+
+9. Template Literals
+String Interpolation
+Before ES6 we have to concatenate the strings using + symbol.
+But now, we can manipulate the strings using ${variable_name} by enclosing the whole expression in backticks .
+let name = 'Sara';
+let age = 23;
+let msg = `My name is ${name} I am ${age}.`
+console.log(msg);
+
+Multi line template literals
+In JS ES5 we did multi line literals as:
+const msg = "Like\n" +
+"this !1\n"
+console.log(msg);
+
+But by ES6 we have multi line template literals . To have multi line literals use backticks .
+const msg = `Like 
+this !!.`
+console.log(msg);
+
+10. Destructuring Arrays.
+Destructuring is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+
+Traditional way of fetching values from Array.
+let numbers=[1,2,3];
+
+console.log(numbers[0],numbers[1]);
+
+With ES6 approach
+
+let numbers=[1,2,3];
+let[a, ,c]=numbers;
+console.log(a, c);//1 3
+let[a,b]=numbers;
+console.log(a);//1
+console.log(b);//2
+let[a,b,c,d]=numbers;
+console.log(d);//undefined
+
+
+with Rest parameters
+
+let numbers=[1,2,"3"];
+let[a,...b]=numbers;
+consol[a,b,c,d=10]=numbers;
+console.log(d);//10
+
+Swapping values
+let a =5;
+let b =10;
+[b,a]=[a,b];
+console.log(a);//10
+console.log(b);//5
 
 
