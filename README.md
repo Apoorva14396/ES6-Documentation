@@ -175,7 +175,7 @@ console.log(...numbers);`1 2 3 4 5 `</br>
 
 console.log(Math.max(...numbers))`5`</br>
 
-<h2>8. for-of-Loop</h2></br>
+<h2>8. for-of-Loop</h2>
 for-of is a new loop in ES6 that replaces both for-in and forEach() and supports the new iteration protocol.</br>
 
 let a=[1.29,3.50,7.9];</br>
