@@ -99,13 +99,81 @@ setTimeout(()=> console.log("Hello!!"),1000) // after 1000 ms. it will print Hel
 
 5.Object Literal Expressions
 
-eg:
-let name ="Anna"
-let age=25;
-let obj={
-name,
-age
-}
-console.log(obj);//[object Object]{age:25,name:Anna}
+Before ES6 we declare object by the key value pairs. eg.
+var name = 'Anna';
+var age = 20;
 
-It will automatically look if  it has the value of the variables decalred before declaration of the Object
+var person{
+    name: name,
+    age: age
+}
+console.log(person);
+
+But by ES6 if we can declare the variables above the object creation. eg.
+var firstName = 'Anna';
+var age = 20;
+
+var person{
+    name,
+    age
+}
+console.log(person);
+
+Method properties
+
+When we want the value of a property extracted by a function then we use method property.
+var person={
+    name: 'Bob',
+    age: 20,
+   greet: function(){
+        console.log(this.name+" "+this.age)
+    }
+}
+person.greet();
+console.log(person);
+
+But from ES6 this also become very concise .
+var person={
+    name: 'Bob',
+    age: 20,
+    greet (){
+          console.log(this.name+" "+this.age)
+    }
+}
+person.greet();
+console.log(person);
+
+
+key value pairs for properties of object
+var person={
+    "name": 'Bob',
+    age: 20,
+    "greet Me" (){
+          console.log(this.name+" "+this.age)
+    }
+}
+person["greet Me"]();
+console.log(person);
+
+
+Dynamically adding property names
+
+let name='Anna';
+let age =25;
+
+let ageField="age";
+let obj={
+"name":'Sara',
+[ageField]: 28,
+    "greet Me" (){
+          console.log(this.name+" "+this.age)
+    }
+}
+console.log(obj);
+
+6. Rest Operator
+
+
+
+
+
