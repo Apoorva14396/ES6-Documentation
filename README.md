@@ -127,6 +127,7 @@ person.greet();</br>
 console.log(person);</br>*
 
 But from ES6 this also become very concise .</br>
+
 *var person={</br>
     name: 'Bob',</br>
     age: 20,</br>
@@ -223,7 +224,7 @@ let[a,b,c,d]=numbers;</br>
 console.log(d);`undefined`</br>*
 
 
-with Rest parameters</br>
+With Rest parameters</br>
 *let numbers=[1,2,"3"];</br>
 let[a,...b]=numbers;</br>
 consol[a,b,c,d=10]=numbers;</br>
