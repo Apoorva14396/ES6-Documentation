@@ -3,10 +3,9 @@
 <h1> Getting Started</h1></br>
 
 <h2>What is ES6?</h2></br>
-It is a Scripting Language.</br>
+It is a Scripting Language. ES6 brings many new feature like concept of classes, template tags, arrow functions etc. ... All of the popular javascript libraries and frameworks like Node.js, ReactJS follow ES6.</br>
 
 <h2>1. let & const</h2></br>
-
 <h3>Let keyword</h3></br>
 It is block scope.</br>
 We cannot declare one keyword two times.</br>
@@ -169,7 +168,7 @@ let obj={</br>
 console.log(obj);</br>
 
 <h2>6. Rest Operator</h2></br>
-The rest parameter syntax allows us to represent an indefinite number of arguments as an array. </br>
+When invoking a function, a need sometimes arises to be able to pass in an arbitrary number of arguments, and to process these arguments within the function. This need is handled by the rest function parameters syntax. It provides a way to capture the rest of the arguments after the defined arguments using the syntax shown below. These extra arguments are captured in an array.The rest parameter syntax allows us to represent an indefinite number of arguments as an array. </br>
 
 function sumUp(...toAdd)</br>
 {</br>
@@ -204,6 +203,7 @@ console.log(a);`1.29 3.50 7.9` </br>
 
 
 <h2>9. Template Literals</h2></br>
+String templating refers to interpolating variables and expressions into strings using a syntax like perl or the shell. A string template is enclosed in back-tick characters . By contrast single quotes (‘) or double quotes (“) indicate normal strings. Expressions inside the template are marked out between ${ and }. Here is an example:
 String Interpolation</br>
 Before ES6 we have to concatenate the strings using + symbol.</br>
 But now, we can manipulate the strings using ${variable_name} by enclosing the whole expression in backticks .</br>
