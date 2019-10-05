@@ -1,8 +1,8 @@
 # ES6-Documentation
 
-<h1> Getting Started</h1></br>
+<h1> Getting Started</h1>
 
-<h2>What is ES6?</h2></br>
+<h2>What is ES6?</h2>
 It is a Scripting Language. ES6 brings many new feature like concept of classes, template tags, arrow functions etc. ... All of the popular javascript libraries and frameworks like Node.js, ReactJS follow ES6.</br>
 
 <h2>1. let & const</h2></br>
