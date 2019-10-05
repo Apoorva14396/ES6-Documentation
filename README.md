@@ -7,81 +7,80 @@ It is a Scripting Language.</br>
 
 1. let & const</br>
 
-Let keyword
-It is block scope
-We cannot declare one keyword two times.
-We can just declare the keyword without any initialization.
+Let keyword</br>
+It is block scope.</br>
+We cannot declare one keyword two times.</br>
+We can just declare the keyword without any initialization.</br>
 
-for eg: 
-let j,
-j=20;
-l=30;
+for eg: </br>
+let j,</br>
+j=20;</br>
+l=30;</br>
 
-Explanation by Code 
-let a =20;
-if(true)
-{
-a=30;
-console.log(a); //30
-}
-console.log(a);//20
-age=70;
-console.log(a);//70
-
-
-Const keyword.
-Value of const cannot be change if we change it will throw runtime error.
-eg: const X=1;
-X=2; 
-console.log(X); //error:Assignment to constant variable
-We should initialize the const variable with value at the time of declaration.
+eg:let a =20;</br>
+if(true)</br>
+{</br>
+a=30;</br>
+console.log(a);//30</br>
+}</br>
+console.log(a);//20</br>
+age=70;</br>
+console.log(a);//70</br>
 
 
-Arrays and objects are of **reference types** .So, const here holds doesn't hold constant values but a pointer to those values which is of constant type.
-
-const AGES=[23,45,39];
-console.log(AGES); //[23,45,39]
-AGES.push(25);
-console.log(AGES); //[23,45,39,25]
-
-const OBJ={
-age=27;
-}
-console.log(OBJ); //[object Object]{age:27}
-OBJ.age=29;
-console.log(age);//[object Object]{age:29}
-
-2. Block Scope
-Anuthing within{} is considered to be block scope. 
-let and const both are block scope variables
-
-eg:
-let y=9;
-if(3>2)
-{
-y=10;
-console.log(y);//10
-}
-console.log(y)//9
-
-3.Hoisting with let and const 
-Hoisting means initializing the varibale before declaring the type.Works with var but doesn't work with let and const.
-
-age=27;
-console.log(age);
-let age; // age is not defined
-
-function f1()
-{
-age=27;
-}
-let age;
-f1();
-console.log(age);// 27
-Works fine because we are decaring the age before calling the function.
+Const keyword.</br>
+Value of const cannot be change if we change it will throw runtime error.</br>
+eg: const X=1;</br>
+X=2; </br>
+console.log(X); //error:Assignment to constant variable</br>
+We should initialize the const variable with value at the time of declaration.</br>
 
 
-4. Arrow function.
+Arrays and objects are of **reference types** .So, const here holds doesn't hold constant values but a pointer to those</br> values which is of constant type.</br>
+
+const AGES=[23,45,39];</br>
+console.log(AGES); //[23,45,39]</br>
+AGES.push(25);</br>
+console.log(AGES); //[23,45,39,25]</br>
+
+const OBJ={</br>
+age=27;</br>
+}</br>
+console.log(OBJ); //[object Object]{age:27}</br>
+OBJ.age=29;</br>
+console.log(age);//[object Object]{age:29}</br>
+
+2. Block Scope</br>
+Anuthing within{} is considered to be block scope. </br>
+let and const both are block scope variables.</br>
+
+eg:</br>
+let y=9;</br>
+if(3>2)</br>
+{</br>
+y=10;</br>
+console.log(y);//10</br>
+}</br>
+console.log(y)//9</br>
+
+3.Hoisting with let and const </br>
+Hoisting means initializing the varibale before declaring the type.Works with var but doesn't work with let and const.</br>
+
+age=27;</br>
+console.log(age);</br></br>
+let age; // age is not defined</br>
+
+function f1()</br>
+{</br>
+age=27;</br>
+}</br>
+let age;</br>
+f1();</br>
+console.log(age);// 27</br>
+Works fine because we are decaring the age before calling the function.</br>
+
+
+4. Arrow function.</br>
 An addition in ES6.
 We use => in place of function keyword.
 
