@@ -5,8 +5,8 @@
 <h2>What is ES6?</h2>
 It is a Scripting Language. ES6 brings many new feature like concept of classes, template tags, arrow functions etc. ... All of the popular javascript libraries and frameworks like Node.js, ReactJS follow ES6.</br>
 
-<h2>1. let & const</h2></br>
-<h3>Let keyword</h3></br>
+<h2>1. let & const</h2>
+<h3>Let keyword</h3>
 It is block scope.</br>
 We cannot declare one keyword two times.</br>
 We can just declare the keyword without any initialization.</br>
@@ -26,7 +26,7 @@ console.log(a);`20`</br>
 age=70;</br>
 console.log(a);`70`</br>
 
-<h3>Const keyword.</h3></br>
+<h3>Const keyword.</h3>
 Value of const cannot be change if we change it will throw runtime error.</br>
 eg: const X=1;</br>
 X=2; </br>
@@ -48,7 +48,7 @@ console.log(OBJ); `[object Object]{age:27}`</br>
 OBJ.age=29;</br>
 console.log(age);`[object Object]{age:29}`</br>
 
-<h2>2. Block Scope</h2></br>
+<h2>2. Block Scope</h2>
 Anuthing within{} is considered to be block scope. </br>
 let and const both are block scope variables.</br>
 
@@ -78,7 +78,7 @@ console.log(age);`27`</br>
 Works fine because we are decaring the age before calling the function.</br>
 
 
-<h2>4. Arrow function.</h2></br>
+<h2>4. Arrow function.</h2>
 An addition in ES6.</br>
 We use => in place of function keyword.</br></br>
 
@@ -116,8 +116,7 @@ var person{</br>
 }</br>
 console.log(person);</br>
 
-<h3>Method properties</h3></br>
-
+<h3>Method properties</h3>
 When we want the value of a property extracted by a function then we use method property.</br></br>
 var person={</br>
     name: 'Bob',</br>
@@ -151,7 +150,6 @@ var person={</br>
 person["greet Me"]();</br>
 console.log(person);</br>
 
-
 Dynamically adding property names</br>
 
 let name='Anna';</br>
@@ -167,7 +165,7 @@ let obj={</br>
 }</br>
 console.log(obj);</br>
 
-<h2>6. Rest Operator</h2></br>
+<h2>6. Rest Operator</h2>
 When invoking a function, a need sometimes arises to be able to pass in an arbitrary number of arguments, and to process these arguments within the function. This need is handled by the rest function parameters syntax. It provides a way to capture the rest of the arguments after the defined arguments using the syntax shown below. These extra arguments are captured in an array.The rest parameter syntax allows us to represent an indefinite number of arguments as an array. </br>
 
 function sumUp(...toAdd)</br>
@@ -183,7 +181,7 @@ return result;</br>
 console.log(sumUp(100,10,20));`130`</br>
 
 
-<h2>7 Spread Operator</h2></br>
+<h2>7 Spread Operator</h2>
 Spread operator allows an iterable to expand in places where 0+ arguments are expected. It is mostly used in variable array</br> where there is more than 1 values are expected.It allows us the privilege to obtain a list of parameters from an array.</br>
 
 let numbers=[1,2,3,4,5];</br>
@@ -202,7 +200,7 @@ console.log(a);`1.29 3.50 7.9` </br>
 }</br>
 
 
-<h2>9. Template Literals</h2></br>
+<h2>9. Template Literals</h2>
 String templating refers to interpolating variables and expressions into strings using a syntax like perl or the shell. A string template is enclosed in back-tick characters . By contrast single quotes (‘) or double quotes (“) indicate normal strings. Expressions inside the template are marked out between ${ and }. Here is an example:
 String Interpolation</br>
 Before ES6 we have to concatenate the strings using + symbol.</br>
@@ -223,7 +221,7 @@ const msg = `Like </br>
 this !!.`</br>
 console.log(msg);</br>
 
-<h2>10. Destructuring Arrays.</h2></br>
+<h2>10. Destructuring Arrays.</h2>
 Destructuring is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects,</br> into distinct variables.</br>
 
 Traditional way of fetching values from Array.</br>
