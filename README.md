@@ -81,182 +81,181 @@ Works fine because we are decaring the age before calling the function.</br>
 
 
 4. Arrow function.</br>
-An addition in ES6.
-We use => in place of function keyword.
+An addition in ES6.</br>
+We use => in place of function keyword.</br></br>
 
-when your function just have a single argument then tere is no need to pass it in the parenthesis.
-eg:
-var fn=(a,b)=>return a+b;
-console.log(fn(2,3)); //5
+when your function just have a single argument then tere is no need to pass it in the parenthesis.</br>
+eg:</br>
+var fn=(a,b)=>return a+b;</br>
+console.log(fn(2,3)); //5</br>
 
-var fn=(a)=>return a+3;
-console.log(fn(5)); //8
+var fn=(a)=>return a+3;</br>
+console.log(fn(5)); //8</br>
 
-<h2>Arrow functions with callback functions</h2>
-eg:
-setTimeout(()=> console.log("Hello!!"),1000) // after 1000 ms. it will print Hello!!
+<h2>Arrow functions with callback functions</h2></br>
+eg:</br>
+setTimeout(()=> console.log("Hello!!"),1000) // after 1000 ms. it will print Hello!!</br>
 
-5.Object Literal Expressions
+5.Object Literal Expressions</br>
 
-Before ES6 we declare object by the key value pairs. eg.
-var name = 'Anna';
-var age = 20;
+Before ES6 we declare object by the key value pairs. eg.</br>
+var name = 'Anna';</br>
+var age = 20;</br>
 
-var person{
-    name: name,
-    age: age
-}
-console.log(person);
+var person{</br
+    name: name</br>
+    age: age</br>
+}</br>
+console.log(person);</br>
 
-But by ES6 if we can declare the variables above the object creation. eg.
-var firstName = 'Anna';
-var age = 20;
+But by ES6 if we can declare the variables above the object creation. eg.</br>
+var firstName = 'Anna';</br>
+var age = 20;</br>
 
-var person{
-    name,
-    age
-}
-console.log(person);
+var person{</br>
+    name,</br>
+    age</br>
+}</br>
+console.log(person);</br>
 
-Method properties
+Method properties</br>
 
-When we want the value of a property extracted by a function then we use method property.
-var person={
-    name: 'Bob',
-    age: 20,
-    greet: function(){
-        console.log(this.name+" "+this.age)
-    }
-}
-person.greet();
-console.log(person);
+When we want the value of a property extracted by a function then we use method property.</br></br>
+var person={</br>
+    name: 'Bob',</br>
+    age: 20,</br>
+    greet: function(){</br>
+        console.log(this.name+" "+this.age)</br>
+    }</br>
+}</br>
+person.greet();</br>
+console.log(person);</br>
 
-But from ES6 this also become very concise .
-var person={
-    name: 'Bob',
-    age: 20,
-    greet (){
-          console.log(this.name+" "+this.age)
-    }
-}
-person.greet();
-console.log(person);
+But from ES6 this also become very concise .</br>
+var person={</br>
+    name: 'Bob',</br>
+    age: 20,</br>
+    greet (){</br>
+          console.log(this.name+" "+this.age)</br>
+    }</br>
+}</br>
+person.greet();</br>
+console.log(person);</br>
 
-
-key value pairs for properties of object
-var person={
-    "name": 'Bob',
-    age: 20,
-    "greet Me" (){
-          console.log(this.name+" "+this.age)
-    }
-}
-person["greet Me"]();
-console.log(person);
-
-
-Dynamically adding property names
-
-let name='Anna';
-let age =25;
-
-let ageField="age";
-let obj={
-"name":'Sara',
-[ageField]: 28,
-    "greet Me" (){
-          console.log(this.name+" "+this.age)
-    }
-}
-console.log(obj);
-
-6. Rest Operator
-The rest parameter syntax allows us to represent an indefinite number of arguments as an array. 
-
-function sumUp(...toAdd)
-{
-console.log(toAdd);//[100,10,20]
-let result=0;
-for(let i =0;i<toAdd.length;i++)
-{
-result+=toAdd[i];
-}
-return result;
-}
-console.log(sumUp(100,10,20)); //130
+key value pairs for properties of object</br>
+var person={</br>
+    "name": 'Bob',</br>
+    age: 20,</br>
+    "greet Me" (){</br>
+          console.log(this.name+" "+this.age)</br>
+    }</br>
+}</br>
+person["greet Me"]();</br>
+console.log(person);</br>
 
 
-7 Spread Operator
-Spread operator allows an iterable to expand in places where 0+ arguments are expected. It is mostly used in variable array where there is more than 1 values are expected.It allows us the privilege to obtain a list of parameters from an array.
+Dynamically adding property names</br>
 
-let numbers=[1,2,3,4,5];
+let name='Anna';</br>
+let age =25;</br>
 
-console.log(...numbers);// 1 2 3 4 5 
+let ageField="age";</br>
+let obj={</br>
+"name":'Sara',</br>
+[ageField]: 28,</br>
+    "greet Me" (){</br>
+          console.log(this.name+" "+this.age)</br>
+    }</br></br>
+}</br>
+console.log(obj);</br>
 
-console.log(Math.max(...numbers))//5
+6. Rest Operator</br>
+The rest parameter syntax allows us to represent an indefinite number of arguments as an array. </br>
 
-8. for-of-Loop
-for-of is a new loop in ES6 that replaces both for-in and forEach() and supports the new iteration protocol.
-
-let a=[1.29,3.50,7.9];
-for(let b of a)
-{
-console.log(a);// 1.29 3.50 7.9 
-}
-
-
-9. Template Literals
-String Interpolation
-Before ES6 we have to concatenate the strings using + symbol.
-But now, we can manipulate the strings using ${variable_name} by enclosing the whole expression in backticks .
-let name = 'Sara';
-let age = 23;
-let msg = `My name is ${name} I am ${age}.`
-console.log(msg);
-
-Multi line template literals
-In JS ES5 we did multi line literals as:
-const msg = "Like\n" +
-"this !1\n"
-console.log(msg);
-
-But by ES6 we have multi line template literals . To have multi line literals use backticks .
-const msg = `Like 
-this !!.`
-console.log(msg);
-
-10. Destructuring Arrays.
-Destructuring is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
-
-Traditional way of fetching values from Array.
-let numbers=[1,2,3];
-
-console.log(numbers[0],numbers[1]);
-
-With ES6 approach
-
-let numbers=[1,2,3];
-let[a, ,c]=numbers;
-console.log(a, c);//1 3
-let[a,b]=numbers;
-console.log(a);//1
-console.log(b);//2
-let[a,b,c,d]=numbers;
-console.log(d);//undefined
+function sumUp(...toAdd)</br>
+{</br>
+console.log(toAdd);//[100,10,20]</br>
+let result=0;</br>
+for(let i =0;i<toAdd.length;i++)</br>
+{</br>
+result+=toAdd[i];</br>
+}</br>
+return result;</br>
+}</br>
+console.log(sumUp(100,10,20)); //130</br>
 
 
-with Rest parameters
+7 Spread Operator</br>
+Spread operator allows an iterable to expand in places where 0+ arguments are expected. It is mostly used in variable array</br> where there is more than 1 values are expected.It allows us the privilege to obtain a list of parameters from an array.</br>
 
-let numbers=[1,2,"3"];
-let[a,...b]=numbers;
-consol[a,b,c,d=10]=numbers;
-console.log(d);//10
+let numbers=[1,2,3,4,5];</br>
 
-Swapping values
-let a =5;
-let b =10;
-[b,a]=[a,b];
-console.log(a);//10
+console.log(...numbers);// 1 2 3 4 5 </br>
+
+console.log(Math.max(...numbers))//5</br>
+
+8. for-of-Loop</br>
+for-of is a new loop in ES6 that replaces both for-in and forEach() and supports the new iteration protocol.</br>
+
+let a=[1.29,3.50,7.9];</br>
+for(let b of a)</br>
+{</br>
+console.log(a);// 1.29 3.50 7.9 </br>
+}</br>
+
+
+9. Template Literals</br>
+String Interpolation</br>
+Before ES6 we have to concatenate the strings using + symbol.</br>
+But now, we can manipulate the strings using ${variable_name} by enclosing the whole expression in backticks .</br>
+let name = 'Sara';</br>
+let age = 23;</br>
+let msg = `My name is ${name} I am ${age}.`</br>
+console.log(msg);</br>
+
+Multi line template literals</br>
+In JS ES5 we did multi line literals as:</br>
+const msg = "Like\n" +</br>
+"this !1\n"</br>
+console.log(msg);</br>
+
+But by ES6 we have multi line template literals . To have multi line literals use backticks .</br>
+const msg = `Like </br>
+this !!.`</br>
+console.log(msg);</br>
+
+10. Destructuring Arrays.</br>
+Destructuring is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects,</br> into distinct variables.</br>
+
+Traditional way of fetching values from Array.</br>
+let numbers=[1,2,3];</br>
+
+console.log(numbers[0],numbers[1]);</br>
+
+With ES6 approach</br>
+
+let numbers=[1,2,3];</br>
+let[a, ,c]=numbers;</br>
+console.log(a, c);//1 3</br>
+let[a,b]=numbers;</br>
+console.log(a);//1</br>
+console.log(b);//2</br>
+let[a,b,c,d]=numbers;</br>
+console.log(d);//undefined</br>
+
+
+with Rest parameters</br>
+
+let numbers=[1,2,"3"];</br>
+let[a,...b]=numbers;</br>
+consol[a,b,c,d=10]=numbers;</br>
+console.log(d);//10</br>
+
+Swapping values</br>
+let a =5;</br>
+let b =10;</br>
+[b,a]=[a,b];</br>
+console.log(a);//10</br>
 console.log(b);//5
 
 
