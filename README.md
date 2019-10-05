@@ -63,7 +63,7 @@ console.log(y);//10</br>
 }</br>
 console.log(y)//9</br>
 
-3.Hoisting with let and const </br>
+<h2>3.Hoisting with let and const</h2> </br>
 Hoisting means initializing the varibale before declaring the type.Works with var but doesn't work with let and const.</br>
 
 age=27;</br>
@@ -80,7 +80,7 @@ console.log(age);// 27</br>
 Works fine because we are decaring the age before calling the function.</br>
 
 
-4. Arrow function.</br>
+<h2>4. Arrow function.</h2></br>
 An addition in ES6.</br>
 We use => in place of function keyword.</br></br>
 
@@ -96,7 +96,7 @@ console.log(fn(5)); //8</br>
 eg:</br>
 setTimeout(()=> console.log("Hello!!"),1000) // after 1000 ms. it will print Hello!!</br>
 
-5.Object Literal Expressions</br>
+<h2>5.Object Literal Expressions</h2></br>
 
 Before ES6 we declare object by the key value pairs. eg.</br>
 var name = 'Anna';</br>
@@ -169,7 +169,7 @@ let obj={</br>
 }</br>
 console.log(obj);</br>
 
-6. Rest Operator</br>
+<h2>6. Rest Operator</h2></br>
 The rest parameter syntax allows us to represent an indefinite number of arguments as an array. </br>
 
 function sumUp(...toAdd)</br>
@@ -185,7 +185,7 @@ return result;</br>
 console.log(sumUp(100,10,20)); //130</br>
 
 
-7 Spread Operator</br>
+<h2>7 Spread Operator</h2></br>
 Spread operator allows an iterable to expand in places where 0+ arguments are expected. It is mostly used in variable array</br> where there is more than 1 values are expected.It allows us the privilege to obtain a list of parameters from an array.</br>
 
 let numbers=[1,2,3,4,5];</br>
@@ -194,7 +194,7 @@ console.log(...numbers);// 1 2 3 4 5 </br>
 
 console.log(Math.max(...numbers))//5</br>
 
-8. for-of-Loop</br>
+<h2>8. for-of-Loop</h2></br>
 for-of is a new loop in ES6 that replaces both for-in and forEach() and supports the new iteration protocol.</br>
 
 let a=[1.29,3.50,7.9];</br>
@@ -204,7 +204,7 @@ console.log(a);// 1.29 3.50 7.9 </br>
 }</br>
 
 
-9. Template Literals</br>
+<h2>9. Template Literals</h2></br>
 String Interpolation</br>
 Before ES6 we have to concatenate the strings using + symbol.</br>
 But now, we can manipulate the strings using ${variable_name} by enclosing the whole expression in backticks .</br>
@@ -224,7 +224,7 @@ const msg = `Like </br>
 this !!.`</br>
 console.log(msg);</br>
 
-10. Destructuring Arrays.</br>
+<h2>10. Destructuring Arrays.</h2></br>
 Destructuring is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects,</br> into distinct variables.</br>
 
 Traditional way of fetching values from Array.</br>
