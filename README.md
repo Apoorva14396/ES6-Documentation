@@ -34,7 +34,6 @@ X=2; </br>
 console.log(X);`error:Assignment to constant variable`</br>
 -We should initialize the const variable with value at the time of declaration.</br>
 
-
 Arrays and objects are of **reference types** .So, const here holds doesn't hold constant values but a pointer to those</br> values which is of constant type.</br>
 
 *eg:const AGES=[23,45,39];</br>
@@ -144,7 +143,7 @@ key value pairs for properties of object</br>
           console.log(this.name+" "+this.age)</br>
     }</br>
 }</br>
-person["greet Me"]();</br>
+person ["greet Me"] ();</br>
 console.log(person);</br>*
 
 <h2>6. Rest Operator</h2>
