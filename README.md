@@ -29,9 +29,9 @@ console.log(a);`70`</br>*
 
 <h3>Const keyword.</h3>
 -Value of const cannot be change if we change it will throw runtime error.</br>
-* eg: const X=1;</br>
+eg: const X=1;</br>
 X=2; </br>
-console.log(X);*`error:Assignment to constant variable`</br>
+console.log(X);`error:Assignment to constant variable`</br>
 -We should initialize the const variable with value at the time of declaration.</br>
 
 
@@ -52,20 +52,20 @@ console.log(age);`[object Object]{age:29}`</br>*
 <h2>2. Block Scope</h2>
 -Anything within{} is considered to be block scope. </br>
 -let and const both are block scope variables.</br>
-*eg:</br>
+eg:</br>
 let y=9;</br>
 if(3>2)</br>
 {</br>
 y=10;</br>
 console.log(y);`10`</br>
 }</br>
-console.log(y);`9`</br>*
+console.log(y);`9`</br>
 
 <h2>3.Hoisting with let and const</h2> 
 -Hoisting means initializing the varibale before declaring the type.Works with var but doesn't work with let and const.</br>
-*eg:age=27;</br>
+eg:age=27;</br>
 console.log(age);</br>
-let age; `age is not defined`</br>*
+let age; `age is not defined`</br>
 
 *function f1()</br>
 {</br>
