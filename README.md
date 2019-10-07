@@ -31,7 +31,7 @@ console.log(a);`70`</br>*
 -Value of const cannot be change if we change it will throw runtime error.</br>
 * eg: const X=1;</br>
 X=2; </br>
-console.log(X);* `error:Assignment to constant variable`</br>
+console.log(X);*`error:Assignment to constant variable`</br>
 -We should initialize the const variable with value at the time of declaration.</br>
 
 
@@ -65,7 +65,7 @@ console.log(y);`9`</br>*
 -Hoisting means initializing the varibale before declaring the type.Works with var but doesn't work with let and const.</br>
 *eg:age=27;</br>
 console.log(age);</br>
-let age; `age is not defined`</br>
+let age; `age is not defined`</br>*
 
 *function f1()</br>
 {</br>
