@@ -65,7 +65,8 @@ console.log(y);`9`</br>*
 -Hoisting means initializing the varibale before declaring the type.Works with var but doesn't work with let and const.</br>
 *eg:age=27;</br>
 console.log(age);</br>
-let age; `age is not defined`</br>*
+let age; `age is not defined`</br>
+
 *function f1()</br>
 {</br>
 age=27;</br>
