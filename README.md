@@ -14,9 +14,10 @@ It is a Scripting Language. ES6 brings many new feature like concept of classes,
 *eg: </br>
 let j,</br>
 j=20;</br>
-l=30;</br>*
+j=30;</br>*
 
-*eg:let a =20;</br>
+*eg:
+let a =20;</br>
 if(true)</br>
 {</br>
 a=30;</br>
@@ -28,9 +29,9 @@ console.log(a);`70`</br>*
 
 <h3>Const keyword.</h3>
 -Value of const cannot be change if we change it will throw runtime error.</br>
-*eg: const X=1;</br>
+* eg: const X=1;</br>
 X=2; </br>
-console.log(X); `error:Assignment to constant variable`</br>*
+console.log(X);* `error:Assignment to constant variable`</br>
 -We should initialize the const variable with value at the time of declaration.</br>
 
 
@@ -95,7 +96,6 @@ console.log(fn(5));`8`</br>*
 setTimeout(()=> console.log("Hello!!"),1000) `after 1000 ms. it will print Hello!!`</br>*
 
 <h2>5.Object Literal Expressions</h2></br>
-
 Before ES6 we declare object by the key value pairs. *eg.</br>
 var name = 'Anna';</br>
 var age = 20;</br>
