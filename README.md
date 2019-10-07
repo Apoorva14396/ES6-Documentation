@@ -93,14 +93,15 @@ eg:</br>
 setTimeout(()=> console.log("Hello!!"),1000) `after 1000 ms. it will print Hello!!`
 
 <h2>5.Object Literal Expressions</h2>
-Before ES6 we declare object by the key value pairs. *eg.</br>
+Before ES6 we declare object by the key value pairs. 
+eg.</br>
 var name = 'Anna';</br>
 var age = 20;</br>
 var person{</br
     name: name</br>
     age: age</br>
 }</br>
-console.log(person);</br>*
+console.log(person);</br>
 
 But by ES6 if we can declare the variables above the object creation. *eg.</br>
 var firstName = 'Anna';</br>
