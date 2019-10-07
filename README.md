@@ -90,7 +90,7 @@ console.log(fn(5));`8`</br>*
 
 <h3>Arrow functions with callback functions</h3>
 _eg:</br>
-setTimeout(()=> console.log("Hello!!"),1000) `after 1000 ms. it will print Hello!!`_
+setTimeout(()=> console.log("Hello!!"),1000) _`after 1000 ms. it will print Hello!!`
 
 <h2>5.Object Literal Expressions</h2></br>
 Before ES6 we declare object by the key value pairs. *eg.</br>
