@@ -92,7 +92,7 @@ console.log(fn(5));`8`</br>*
 eg:</br>
 setTimeout(()=> console.log("Hello!!"),1000) `after 1000 ms. it will print Hello!!`
 
-<h2>5.Object Literal Expressions</h2></br>
+<h2>5.Object Literal Expressions</h2>
 Before ES6 we declare object by the key value pairs. *eg.</br>
 var name = 'Anna';</br>
 var age = 20;</br>
@@ -112,8 +112,8 @@ var person{</br>
 console.log(person);</br>*
 
 <h3>Method properties</h3>
-When we want the value of a property extracted by a function then we use method property.</br></br>
-*var person={</br>
+When we want the value of a property extracted by a function then we use method property.</br>
+var person={</br>
     name: 'Bob',</br>
     age: 20,</br>
     greet: function(){</br>
@@ -121,7 +121,7 @@ When we want the value of a property extracted by a function then we use method 
     }</br>
 }</br>
 person.greet();</br>
-console.log(person);</br>*
+console.log(person);</br>
 
 But from ES6 this also become very concise .</br>
 
