@@ -297,30 +297,30 @@ console.log(obj1);  { skill: { running: true }, name: 'Apoorva' }</br>
 
 <h2>14. Array Methods</h2></br>
 
-startsWith()</br>
+<h3>startsWith()</h3></br>
 const startsWith = "helloWorld".startsWith("hello");</br>
 console.log(startsWith); true</br>
 
-endsWith()</br>
+<h3>endsWith()</h3></br>
 const endsWith = "helloWorld".endsWith("World");</br>
 console.log(endsWith); true</br>
 
-repeat()</br>
+<h3>repeat()</h3></br>
 const string = "#".repeat(9);</br>
 console.log(string); #########</br>
  
-includes()</br>
+<h3>includes()</h3></br>
 const includes = "helloworld".includes("llo");</br>
 console.log(includes); true</br>
  
-findIndex()</br>
+<h3>findIndex()</h3></br>
 var arr = [1, 12, 30, 5, 6];</br>
 const results = arr.findIndex(function(index) {</br>
   return index > 10;</br>
 });</br>
 console.log(results); 1</br>
 
-find()</br>
+<h3>find()</h3></br>
 var arr = [1, 12, 30, 5, 6];</br>
 const results = arr.find(function(number) {</br>
   return number > 20;</br>
