@@ -357,6 +357,21 @@ console.log(Number.isFinite(i));`false`</br>
 Returns true if integer is safe, else false.</br>
 console.log(Number.isSafeInteger(1e1000));`false`</br>
 
+<h2>17. Set</h2>
+It’s a collection for unique values. The values could be also a primitives or object references.</br>
 
+const set = new Set([10, 29, 4, 4, 5, 34]);</br>
+console.log(set); `Set { 10, 29, 4, 5, 34 }`</br>
+set.add(9);</br>
+console.log(set);`Set { 10, 29, 4, 5, 34, 9}`</br>
+set.delete(4);</br>
+console.log(set); `Set { 10, 29, 5, 34, 9}`</br>
+set.entries(); </br>
+console.log(set); `Set { 10, 29, 5, 34, 9 }`</br>
+console.log(set.has(9)); `true`</br>
+
+set.forEach(value => {</br>
+  console.log(value); `10 29 5 34 9 `</br>
+});</br>
 
 
