@@ -234,4 +234,95 @@ let b =10;</br>
 console.log(a);`10`</br>
 console.log(b);`5`*
 
+<h2>11. tag</h2></br>
+Allows us to fetch String and values separately</br>
+ function tag(strings, ...values) {</br>
+  console.log(strings);[ 'My name \n is ', '  and my age is ', '' ]</br>
+  console.log(values);[ 'Apoorva', 23 ]</br>
+}</br>
 
+ const name = "Apoorva";</br>
+ const age = 23;</br>
+ tag`My name \n is ${name}  and my age is ${age}`;</br>
+
+
+<h2>12.Generators</h2></br>
+A generator is a function that can stop midway and can continue from where it stopped.</br>
+
+function* fibonacci() {</br>
+  let n1 = 0;</br>
+  let n2 = 1;</br>
+  while (true) </br>
+  {</br>
+    let current = n1;</br>
+    n1 = n2;</br>
+    n2 = current + n1;</br>
+    yield current;</br>
+  }</br>
+}</br>
+
+const iter = fibonacci(); </br>
+console.log(iter.next()); { value: 0, done: false }</br>
+console.log(iter.next()); { value: 1, done: false }</br>
+console.log(iter.next()); { value: 1, done: false }</br>
+console.log(iter.next()); { value: 2, done: false }</br>
+console.log(iter.next()); { value: 3, done: false }</br>
+console.log("Stop here"); Stop here</br>
+console.log(iter.next()); { value: 5, done: false }</br>
+console.log(iter.next()); { value: 8, done: false }</br>
+console.log(iter.next()); { value: 13, done: false }</br>
+
+<h2>13. Object Assignment</h2></br>
+
+var obj1 = {</br>
+  skill: {</br>
+    running: true</br>
+  }</br>
+};</br>
+
+var obj2 = {</br>
+  name: "Apoorva"</br>
+};</br>
+
+obj1 = obj2;</br>
+console.log(obj1); { name: 'Apoorva' }</br>
+
+Object.assign(obj1, obj2);</br>
+console.log(obj1); { skill: { running: true }, name: 'Apoorva' }</br>
+
+Object.keys(obj2).forEach(key => {</br>
+  obj1[key] = obj2[key];</br>
+});</br>
+console.log(obj1);  { skill: { running: true }, name: 'Apoorva' }</br>
+
+<h2>14. Array Methods</h2></br>
+
+startsWith()</br>
+const startsWith = "helloWorld".startsWith("hello");</br>
+console.log(startsWith); true</br>
+
+endsWith()</br>
+const endsWith = "helloWorld".endsWith("World");</br>
+console.log(endsWith); true</br>
+
+repeat()</br>
+const string = "#".repeat(9);</br>
+console.log(string); #########</br>
+ 
+includes()</br>
+const includes = "helloworld".includes("llo");</br>
+console.log(includes); true</br>
+ 
+findIndex()</br>
+var arr = [1, 12, 30, 5, 6];</br>
+const results = arr.findIndex(function(index) {</br>
+  return index > 10;</br>
+});</br>
+console.log(results); 1</br>
+
+find()</br>
+var arr = [1, 12, 30, 5, 6];</br>
+const results = arr.find(function(number) {</br>
+  return number > 20;</br>
+});</br>
+console.log(results); 30</br>
