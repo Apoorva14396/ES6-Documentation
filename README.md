@@ -220,7 +220,6 @@ console.log(b);`2`</br>
 let[a,b,c,d]=numbers;</br>
 console.log(d);`undefined`</br>*
 
-
 With Rest parameters</br>
 *let numbers=[1,2,"3"];</br>
 let[a,...b]=numbers;</br>
@@ -246,7 +245,7 @@ Allows us to fetch String and values separately</br>
  tag`My name \n is ${name}  and my age is ${age}`;</br>
 
 
-<h2>12.Generators</h2></br>
+<h2>12.Generators</h2>
 A generator is a function that can stop midway and can continue from where it stopped.</br>
 
 function* fibonacci() {</br>
@@ -272,7 +271,7 @@ console.log(iter.next()); `{ value: 5, done: false }`</br>
 console.log(iter.next()); `{ value: 8, done: false }`</br>
 console.log(iter.next()); `{ value: 13, done: false }`</br>
 
-<h2>13. Object Assignment</h2></br>
+<h2>13. Object Assignment</h2>
 
 var obj1 = {</br>
   skill: {</br>
