@@ -345,32 +345,12 @@ console.log(Math.sign(0)); `0`</br>
 <h2>16. Number methods </h2>
 <h3>isNaN()</h3></br>
 Returns false if number.Returns true if not a number.</br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ar number=98.9;</br>
+var number=98.9;</br>
 console.log(Number.isNaN(98.9)); `false`</br>
 
 <h3>isFinite()</h3>
 Returns true if number is not otherwise false.</br>
-var i = 1 / 0;v
+var i = 1 / 0;</br>
 console.log(Number.isFinite(i));`false`</br>
 
 <h3>isSafeInteger()</h3>
