@@ -237,8 +237,8 @@ console.log(b);`5`*
 <h2>11. tag</h2></br>
 Allows us to fetch String and values separately</br>
  function tag(strings, ...values) {</br>
-  console.log(strings);[ 'My name \n is ', '  and my age is ', '' ]</br>
-  console.log(values);[ 'Apoorva', 23 ]</br>
+  console.log(strings);*[ 'My name \n is ', '  and my age is ', '' ]*</br>
+  console.log(values);*[ 'Apoorva', 23 ]*</br>
 }</br>
 
  const name = "Apoorva";</br>
@@ -262,15 +262,15 @@ function* fibonacci() {</br>
 }</br>
 
 const iter = fibonacci(); </br>
-console.log(iter.next()); { value: 0, done: false }</br>
-console.log(iter.next()); { value: 1, done: false }</br>
-console.log(iter.next()); { value: 1, done: false }</br>
-console.log(iter.next()); { value: 2, done: false }</br>
-console.log(iter.next()); { value: 3, done: false }</br>
-console.log("Stop here"); Stop here</br>
-console.log(iter.next()); { value: 5, done: false }</br>
-console.log(iter.next()); { value: 8, done: false }</br>
-console.log(iter.next()); { value: 13, done: false }</br>
+console.log(iter.next()); *{ value: 0, done: false }*</br>
+console.log(iter.next()); *{ value: 1, done: false }*</br>
+console.log(iter.next()); *{ value: 1, done: false }*</br>
+console.log(iter.next()); *{ value: 2, done: false }*</br>
+console.log(iter.next()); *{ value: 3, done: false }*</br>
+console.log("Stop here"); *Stop here*</br>
+console.log(iter.next()); *{ value: 5, done: false }*</br>
+console.log(iter.next()); *{ value: 8, done: false }*</br>
+console.log(iter.next()); *{ value: 13, done: false }*</br>
 
 <h2>13. Object Assignment</h2></br>
 
@@ -285,44 +285,44 @@ var obj2 = {</br>
 };</br>
 
 obj1 = obj2;</br>
-console.log(obj1); { name: 'Apoorva' }</br>
+console.log(obj1); *{ name: 'Apoorva' }*</br>
 
 Object.assign(obj1, obj2);</br>
-console.log(obj1); { skill: { running: true }, name: 'Apoorva' }</br>
+console.log(obj1); *{ skill: { running: true }, name: 'Apoorva' }*</br>
 
 Object.keys(obj2).forEach(key => {</br>
   obj1[key] = obj2[key];</br>
 });</br>
-console.log(obj1);  { skill: { running: true }, name: 'Apoorva' }</br>
+console.log(obj1);  *{ skill: { running: true }, name: 'Apoorva' }*</br>
 
-<h2>14. Array Methods</h2></br>
+<h2>14. Array Methods</h2>
 
-<h3>startsWith()</h3></br>
+<h3>startsWith()</h3>
 const startsWith = "helloWorld".startsWith("hello");</br>
-console.log(startsWith); true</br>
+console.log(startsWith); *true*</br>
 
-<h3>endsWith()</h3></br>
+<h3>endsWith()</h3>
 const endsWith = "helloWorld".endsWith("World");</br>
-console.log(endsWith); true</br>
+console.log(endsWith); *true*</br>
 
-<h3>repeat()</h3></br>
+<h3>repeat()</h3>
 const string = "#".repeat(9);</br>
-console.log(string); #########</br>
+console.log(string); *#########*</br>
  
-<h3>includes()</h3></br>
+<h3>includes()</h3>
 const includes = "helloworld".includes("llo");</br>
-console.log(includes); true</br>
+console.log(includes); *true*</br>
  
-<h3>findIndex()</h3></br>
+<h3>findIndex()</h3>
 var arr = [1, 12, 30, 5, 6];</br>
 const results = arr.findIndex(function(index) {</br>
   return index > 10;</br>
 });</br>
-console.log(results); 1</br>
+console.log(results); *1*</br>
 
-<h3>find()</h3></br>
+<h3>find()</h3>
 var arr = [1, 12, 30, 5, 6];</br>
 const results = arr.find(function(number) {</br>
   return number > 20;</br>
 });</br>
-console.log(results); 30</br>
+console.log(results); *30*</br>
