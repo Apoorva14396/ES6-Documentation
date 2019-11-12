@@ -378,10 +378,10 @@ set.clear();</br>
 console.log(set); `Set {}` </br>
 
 <h2>18. Map</h2>
-Maps are a store for key / value pairs. Key and value could be a primitives or object references</br>
+Maps are a store for key / value pairs. Key and value could be a primitives or object references.</br>
 const map = new Map([["name", "Apoorva"], ["age", 23]]);</br>
 map.set("profile", "developer");</br>
-console.log(map);` Map { 'name' => 'Apoorva', 'age' => 23, 'profile' => 'developer' }`</br>
+console.log(map); `Map { 'name' => 'Apoorva', 'age' => 23, 'profile' => 'developer' }`</br>
 const entries = map.entries();</br>
 for (let [key, value] of entries) {</br>
   key, value;</br>
