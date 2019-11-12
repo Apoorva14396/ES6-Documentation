@@ -104,6 +104,11 @@ console.log(person);</br>
 
 But by ES6 if we can declare the variables above the object creation. *eg.</br>
 var firstName = 'Anna';</br>
+Terms
+Privacy
+Security
+Status
+Help
 var age = 20;</br>
 var person{</br>
     name,</br>
@@ -340,7 +345,27 @@ console.log(Math.sign(0)); `0`</br>
 <h2>16. Number methods </h2>
 <h3>isNaN()</h3></br>
 Returns false if number.Returns true if not a number.</br>
-var number=98.9;</br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ar number=98.9;</br>
 console.log(Number.isNaN(98.9)); `false`</br>
 
 <h3>isFinite()</h3>
