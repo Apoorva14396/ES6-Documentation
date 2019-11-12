@@ -78,7 +78,7 @@ Works fine because we are decaring the age before calling the function.</br>
 <h2>4. Arrow function.</h2>
 -An addition in ES6.</br>
 -We use => in place of function keyword.</br></br>
-
+Math
 when your function just have a single argument then tere is no need to pass it in the parenthesis.</br>
 *eg:</br>
 var fn=(a,b)=>return a+b;</br>
@@ -325,3 +325,33 @@ const results = arr.find(function(number) {</br>
   return number > 20;</br>
 });</br>
 console.log(results); `30`</br>
+
+<h2>15. Math functions</h2>
+trunc() returns the whole number by removing the fractional part.</br>
+var number = 98.9;</br>
+console.log(Math.trunc(number)); `98`</br>
+
+sign()</br>
+console.log(Math.sign(10)); `1`
+console.log(Math.sign(-23)); `-1`
+console.log(Math.sign(0)); `0`
+
+
+<h2>16. Number methods </h2></br>
+isNaN()</br>
+Returns false if number.Returns true if not a number.</br>
+var number=98.9;</br>
+console.log(Number.isNaN(98.9)); `false`</br>
+
+isFinite()</br>
+Returns true if number is not otherwise false.</br>
+var i = 1 / 0;v
+console.log(Number.isFinite(i));`false`</br>
+
+isSafeInteger()</br>
+Returns true if integer is safe, else false.</br>
+console.log(Number.isSafeInteger(1e1000));`false`</br>
+
+
+
+
