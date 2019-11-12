@@ -333,9 +333,9 @@ var number = 98.9;</br>
 console.log(Math.trunc(number)); `98`</br>
 
 <h3>sign()</h3>
-console.log(Math.sign(10)); `1`
-console.log(Math.sign(-23)); `-1`
-console.log(Math.sign(0)); `0`
+console.log(Math.sign(10)); `1`</br>
+console.log(Math.sign(-23)); `-1`</br>
+console.log(Math.sign(0)); `0`</br>
 
 <h2>16. Number methods </h2>
 <h3>isNaN()</h3></br>
