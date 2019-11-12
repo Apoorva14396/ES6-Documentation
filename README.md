@@ -327,29 +327,28 @@ const results = arr.find(function(number) {</br>
 console.log(results); `30`</br>
 
 <h2>15. Math functions</h2>
-<h3>trunc() </h3></br>
+<h3>trunc() </h3>
 returns the whole number by removing the fractional part.</br>
 var number = 98.9;</br>
 console.log(Math.trunc(number)); `98`</br>
 
-<h3>sign()</h3></br>
+<h3>sign()</h3>
 console.log(Math.sign(10)); `1`
 console.log(Math.sign(-23)); `-1`
 console.log(Math.sign(0)); `0`
 
-
-<h2>16. Number methods </h2></br>
+<h2>16. Number methods </h2>
 <h3>isNaN()</h3></br>
 Returns false if number.Returns true if not a number.</br>
 var number=98.9;</br>
 console.log(Number.isNaN(98.9)); `false`</br>
 
-<h3>isFinite()</h3></br>
+<h3>isFinite()</h3>
 Returns true if number is not otherwise false.</br>
 var i = 1 / 0;v
 console.log(Number.isFinite(i));`false`</br>
 
-<h3>isSafeInteger()</h3></br>
+<h3>isSafeInteger()</h3>
 Returns true if integer is safe, else false.</br>
 console.log(Number.isSafeInteger(1e1000));`false`</br>
 
