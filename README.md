@@ -343,7 +343,7 @@ console.log(Math.sign(-23)); `-1`</br>
 console.log(Math.sign(0)); `0`</br>
 
 <h2>16. Number methods </h2>
-<h3>isNaN()</h3></br>
+<h3>isNaN()</h3>
 Returns false if number.Returns true if not a number.</br>
 var number=98.9;</br>
 console.log(Number.isNaN(98.9)); `false`</br>
